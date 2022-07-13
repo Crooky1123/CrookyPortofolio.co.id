@@ -17,3 +17,16 @@ footer {
 section {
     padding-top: 5rem;
 }
+
+#about {
+    padding-top: 10rem;
+}
+
+.alert {
+    background-color: #98ee98;
+}
+
+.my-btn {
+    background-color: dodgerblue;
+    color: white;
+}
