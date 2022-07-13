@@ -158,9 +158,9 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <div class="alert my-alert alert-warning alert-dismissible fade show d-none" role="alert">
+                    <div id="alert" class="alert my-alert alert-warning alert-dismissible fade show d-none" role="alert">
                         <strong>Thank you!</strong> We have received your message.
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <button type="button" class="btn-close" onclick="myfunction()" aria-label="Close"></button>
                     </div>
                     <form name='portofolio-contact-form'>
                         <div class="mb-3">
@@ -213,7 +213,7 @@
         const myAlert = document.querySelector('.alert')
         const btnKirim = document.querySelector('.my-btn')
         const btnLoading = document.querySelector('.btn-loading')
-
+        
         form.addEventListener('submit', e => {
             e.preventDefault();
             // ketika tombol diklik
@@ -224,14 +224,19 @@
                 .then(response => {
                     btnLoading.classList.toggle('d-none')
                     btnKirim.classList.toggle('d-none')
-                    myAlert.classList.toggle('d-none')
+                    myAlert.classList.remove('d-none')
                     form.reset()
                     console.log('Success!', response)
                 })
                 .catch(error => console.error('Error!', error.message))
-        })
-        myAlert.classlist.toggle('d-none')
-    </script>
+            })
+            
+            myfunction()
+
+            function myfunction(){
+                myAlert.classList.add('d-none')
+            }
+            </script>
 </body>
 
 </html>
