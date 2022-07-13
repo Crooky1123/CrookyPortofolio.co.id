@@ -1,0 +1,32 @@
+
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: rgb(193, 224, 255);
+}
+
+#Projects {
+    background-color: rgb(193, 224, 255);
+    padding-top: 5rem;
+}
+
+footer {
+    background-color: dodgerblue;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+#about {
+    padding-top: 10rem;
+}
+
+.alert {
+    background-color: #98ee98;
+}
+
+.my-btn {
+    background-color: dodgerblue;
+    color: white;
+}
