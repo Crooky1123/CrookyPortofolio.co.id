@@ -221,7 +221,7 @@
             btnLoading.classList.toggle('d-none')
             btnKirim.classList.toggle('d-none')
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
+                .then(response => {
                     btnLoading.classList.toggle('d-none')
                     btnKirim.classList.toggle('d-none')
                     myAlert.classList.toggle('d-none')
@@ -230,6 +230,7 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+        myAlert.classlist.toggle('d-none')
     </script>
 </body>
 

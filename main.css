@@ -30,3 +30,7 @@ section {
     background-color: dodgerblue;
     color: white;
 }
+
+.navbar-toggler:hover {
+    color: black;
+}
